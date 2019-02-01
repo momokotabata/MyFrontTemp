@@ -1,0 +1,23 @@
+// #PC or SP
+// ===========================================================
+.u-pc
+	display: none !important
+	+pc
+		display: block !important
+
+.u-sp
+	display: block !important
+	+pc
+		display: none !important
+
+br.u-pc,
+span.u-pc
+	display: none !important
+	+pc
+		display: inline !important
+
+br.u-sp,
+span.u-sp
+	display: inline !important
+	+pc
+		display: none !important

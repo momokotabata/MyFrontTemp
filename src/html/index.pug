@@ -1,0 +1,17 @@
+extends /_layouts/_layout.pug
+
+block vars
+	- page = "index"
+	- url = "/"
+	- title = "トップ"
+	- description = ""
+
+block page
+	include /_partials/_header.pug
+
+	.index
+		.l-contents
+			img(src="/assets/images/top/sample.png" data-sp-src="/assets/images/top/sample_sp.png" alt="")
+			p.text だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★だみーてきすと★
+
+	include /_partials/_footer.pug

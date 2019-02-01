@@ -1,0 +1,15 @@
+// global
+// ===========================================================
+// default width
+$max-width: 1280px !default
+$width: 1280px !default
+
+// base font-size
+$font-size: ('sm': 16px,'md': 16px,) !default
+
+@function font($key)
+	@return map-get($font-size, $key)
+
+
+// base Rounded corners
+$radius: 3px !default

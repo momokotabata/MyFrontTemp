@@ -1,0 +1,100 @@
+// base
+// ===========================================================
+html
+	box-sizing: border-box
+
+*,
+*:before,
+*:after
+	box-sizing: inherit
+
+html
+	font-size: map-get($font-size, sm)
+	line-height: 1
+
+body
+	min-width: 320px
+	width: 100%
+	font-family: $font-family-origin
+	-webkit-font-smoothing: subpixel-antialiased
+	-moz-osx-font-smoothing: auto
+	font-kerning: normal
+	+pc
+		min-width: 1280px
+
+
+h1, h2, h3, h4, h5, h6
+	font-family: inherit
+	font-weight: 400
+	line-height: 1
+	color: inherit
+
+li
+	list-style: none
+
+// ネストされたリストのマージンをリセットします
+li
+	> ul, > ol
+		margin-bottom: 0
+
+// `dt`と`dd`の左端を揃えます
+dd
+	margin-left: 0
+
+table
+	width: 100%
+
+th
+	text-align: left
+
+a
+	text-decoration: none
+	cursor: pointer
+	color: #000
+	outline: none
+
+img
+	max-width: 100%
+	width: 100%
+	vertical-align: middle
+
+
+// IEでSVGがフルードイメージにならない不具合があります
+// 属性値が`.svg`で終わる要素に適応します
+[src$=".svg"],
+[data$=".svg"]
+	width: 100%
+
+
+// 日本語では斜体を使用しないためリセットします
+i,
+cite,
+em,
+address,
+dfn
+	font-style: normal
+
+code,
+pre
+	font-family: Consolas, Menlo, Courier, monospace
+
+code
+	padding: 0.2em
+	background-color: rgba(0,0,0,0.06)
+
+pre code
+	padding: 0
+	background-color: inherit
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre
+	margin-top: 0
+	margin-bottom: 0
+
+ul,li,dl,dt,dd
+	padding: 0
